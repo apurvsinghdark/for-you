@@ -1,0 +1,550 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>I'm Sorry</title>
+<meta name="description" content="A note for you. Open it.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#ebd5d1" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#27171d" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:title" content="A note for you">
+<meta property="og:description" content="Open it.">
+<meta property="og:url" content="https://apurvsinghdark.github.io/for-you/">
+<meta property="og:image" content="https://apurvsinghdark.github.io/for-you/preview.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="A handwritten note on notebook paper that says I'm sorry.">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23d3204c' d='M12 20.3C7.2 17 3.4 13.6 3.3 9.4 3.2 6.2 5.6 4.3 8.1 4.6c1.8.2 3.1 1.5 3.9 3.2.9-1.8 2.3-3.1 4.2-3.2 2.6-.2 4.7 1.9 4.4 5-.4 4.2-4.2 7.4-8.6 10.7z'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600&family=Kalam:wght@300;400;700&display=swap">
+<style>
+:root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+body{margin:0;font:14px/1.4 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+img{max-width:100%}
+[hidden]{display:none!important}
+</style>
+<style>
+/* Layout: one page torn out of a school notebook, lying on a desk. A narrow, phone-first column where the note itself is the whole interface. */
+:root{
+  --desk:#ebd5d1;
+  --desk-deep:#d3ada8;
+  --glow:rgba(255,255,255,.45);
+  --paper:#fffdf8;
+  --rule:#b8cdea;
+  --margin:#ea8a96;
+  --print:#8595b3;
+  --ink:#1f3489;
+  --pencil:#75707b;
+  --gel:#d3204c;
+  --hl:rgba(255,72,164,.40);
+  --tape:rgba(148,210,193,.82);
+  --tape-2:rgba(208,239,229,.82);
+  --sticky:#ffe57a;
+  --shadow:rgba(98,42,54,.24);
+  --shadow-near:rgba(98,42,54,.22);
+  --crease:rgba(72,40,56,.10);
+  --crease-soft:rgba(72,40,56,.035);
+  --glint:rgba(255,255,255,.24);
+  --lacquer-red:#c42533;
+  --lacquer-black:#221c20;
+  --wood:#ebc898;
+  --graphite:#3c3a3f;
+
+  --font-hand:"Kalam","Segoe Print","Bradley Hand","Chalkboard SE","Comic Sans MS",cursive;
+  --font-print:"Barlow Condensed","Arial Narrow","Roboto Condensed",sans-serif;
+  --grain:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .55 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.13'/%3E%3C/svg%3E");
+
+  --lh:32px;
+  --text-x:54px;
+  --margin-x:38px;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --desk:#27171d; --desk-deep:#12090d; --glow:rgba(255,184,140,.10);
+    --paper:#ece4d7; --rule:#a1b2cc; --margin:#cd6b78; --print:#7485a2;
+    --ink:#1c2c76; --pencil:#625d67; --gel:#c51d48; --hl:rgba(255,78,165,.42);
+    --tape:rgba(124,184,168,.74); --tape-2:rgba(176,212,201,.74);
+    --sticky:#efd463; --shadow:rgba(0,0,0,.55); --shadow-near:rgba(0,0,0,.45);
+    --crease:rgba(40,20,30,.13); --crease-soft:rgba(40,20,30,.05); --glint:rgba(255,255,255,.14);
+    --lacquer-red:#b3222f; --lacquer-black:#191417; --wood:#d8b587; --graphite:#2e2c30;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --desk:#27171d; --desk-deep:#12090d; --glow:rgba(255,184,140,.10);
+  --paper:#ece4d7; --rule:#a1b2cc; --margin:#cd6b78; --print:#7485a2;
+  --ink:#1c2c76; --pencil:#625d67; --gel:#c51d48; --hl:rgba(255,78,165,.42);
+  --tape:rgba(124,184,168,.74); --tape-2:rgba(176,212,201,.74);
+  --sticky:#efd463; --shadow:rgba(0,0,0,.55); --shadow-near:rgba(0,0,0,.45);
+  --crease:rgba(40,20,30,.13); --crease-soft:rgba(40,20,30,.05); --glint:rgba(255,255,255,.14);
+  --lacquer-red:#b3222f; --lacquer-black:#191417; --wood:#d8b587; --graphite:#2e2c30;
+  color-scheme:dark;
+}
+
+html{ background-color:var(--desk); }
+body{
+  min-height:100vh;
+  overflow-x:clip;
+  background-color:var(--desk);
+  background-image:
+    var(--grain),
+    radial-gradient(70% 48% at 50% 14%, var(--glow), transparent 72%),
+    radial-gradient(150% 110% at 50% 22%, transparent 48%, var(--desk-deep) 120%);
+  color:var(--ink);
+  font-family:var(--font-hand);
+  padding-block:52px 88px;
+  padding-left:max(16px, env(safe-area-inset-left, 0px));
+  padding-right:max(16px, env(safe-area-inset-right, 0px));
+}
+
+/* ---------- the scene ---------- */
+.scene{
+  position:relative;
+  width:min(100%, 560px);
+  margin-inline:auto;
+  transform:rotate(-.5deg);
+  animation:settle 1s cubic-bezier(.2,.75,.25,1) both;
+}
+@keyframes settle{
+  from{ transform:translateY(24px) rotate(-2deg); }
+  to{ transform:rotate(-.5deg); }
+}
+.sheet{
+  filter:drop-shadow(0 1px 1px var(--shadow-near)) drop-shadow(0 18px 20px var(--shadow));
+}
+.tape{
+  position:absolute; z-index:4;
+  top:-14px; left:50%;
+  display:flex; align-items:center; justify-content:center;
+  min-width:130px; height:30px; padding-inline:18px;
+  transform:translateX(-50%) rotate(-3.5deg);
+  background:repeating-linear-gradient(135deg, var(--tape) 0 7px, var(--tape-2) 7px 14px);
+  clip-path:polygon(0 0, 100% 0, 97% 14%, 100% 28%, 97% 42%, 100% 57%, 97% 71%, 100% 86%, 97% 100%, 3% 100%, 0 86%, 3% 71%, 0 57%, 3% 42%, 0 28%, 3% 14%);
+}
+
+.tape-name{
+  padding-top:2px;
+  font-family:var(--font-hand); font-weight:700; font-size:15px; line-height:1;
+  color:var(--ink);
+  transform:rotate(1deg);
+}
+
+/* ---------- the notebook page ---------- */
+.paper{
+  position:relative;
+  padding-top:26px;
+  background-color:var(--paper);
+  background-image:linear-gradient(90deg,
+    transparent calc(var(--margin-x) - 4.5px),
+    var(--margin) calc(var(--margin-x) - 4.5px), var(--margin) calc(var(--margin-x) - 3.3px),
+    transparent calc(var(--margin-x) - 3.3px), transparent var(--margin-x),
+    var(--margin) var(--margin-x), var(--margin) calc(var(--margin-x) + 1.2px),
+    transparent calc(var(--margin-x) + 1.2px));
+}
+/* fold creases from being folded into quarters, plus paper grain */
+.paper::after{
+  content:""; position:absolute; inset:0; z-index:2; pointer-events:none;
+  mix-blend-mode:multiply;
+  background-image:
+    linear-gradient(90deg, transparent 49.3%, var(--crease) 50%, transparent 50.6%),
+    linear-gradient(180deg, transparent 49.6%, var(--crease) 50%, transparent 50.35%),
+    linear-gradient(90deg, transparent 16%, var(--crease-soft) 50%, transparent 84%),
+    linear-gradient(180deg, transparent 30%, var(--crease-soft) 50%, transparent 70%),
+    var(--grain);
+}
+
+.page-head{
+  display:flex; justify-content:flex-end; align-items:flex-end; flex-wrap:wrap; gap:6px 16px;
+  padding:0 20px 10px var(--text-x);
+  border-bottom:3px double var(--rule);
+  font-family:var(--font-print); font-weight:600;
+  font-size:11px; letter-spacing:.14em; text-transform:uppercase;
+  color:var(--print);
+}
+.field{ display:flex; align-items:baseline; gap:6px; }
+.field b{
+  min-width:1.8em; padding:0 6px;
+  font-family:var(--font-hand); font-weight:400; font-size:17px; line-height:1.3;
+  letter-spacing:0; text-transform:none; text-align:center;
+  color:var(--ink);
+  border-bottom:1.5px dotted var(--print);
+}
+
+.lines{
+  position:relative;
+  display:flex; flex-direction:column; gap:var(--lh);
+  padding:var(--lh) 20px calc(var(--lh) * 2) var(--text-x);
+  font-size:19px; line-height:var(--lh);
+  background-image:linear-gradient(to bottom,
+    transparent var(--line-y, 23px),
+    var(--rule) var(--line-y, 23px), var(--rule) calc(var(--line-y, 23px) + 1px),
+    transparent calc(var(--line-y, 23px) + 1px));
+  background-size:100% var(--lh);
+}
+@media (min-width:480px){
+  .lines{ font-size:20px; padding-right:28px; }
+}
+.lines p, .lines h1, .lines ul{ margin:0; }
+.greet, [data-sit]{ position:relative; }
+.lines s{ text-decoration-line:line-through; text-decoration-thickness:2px; text-decoration-color:currentColor; }
+.bl-probe{ display:inline-block; width:0; height:0; vertical-align:baseline; }
+
+.sorry{
+  font-weight:700;
+  font-size:clamp(40px, 12vw, 56px);
+  line-height:calc(var(--lh) * 2);
+  letter-spacing:-.01em;
+  transform:translateY(var(--nudge, 0px));
+}
+.hl{
+  margin-left:-.1em; padding:0 .14em 0 .1em;
+  background-image:linear-gradient(98deg, transparent 0 1%, var(--hl) 2.5% 96.5%, transparent 98.5%);
+  background-repeat:no-repeat;
+  background-position:0 var(--hl-y, 58%);
+  background-size:100% var(--hl-h, 40%);
+  -webkit-box-decoration-break:clone; box-decoration-break:clone;
+  animation:swipe .75s .55s cubic-bezier(.35,.65,.25,1) both;
+}
+@keyframes swipe{ from{ background-size:0% var(--hl-h, 40%); } }
+.aside{ display:none; }
+@media (min-width:600px){
+  .aside{
+    display:inline; margin-left:.35em;
+    font-size:20px; font-weight:300; line-height:0; letter-spacing:0;
+    color:var(--pencil);
+  }
+}
+.arrow-anchor{ display:inline-block; position:relative; width:46px; height:0; vertical-align:baseline; }
+.arrow{ position:absolute; left:0; bottom:2px; width:40px; height:20px; overflow:visible; fill:none; stroke:var(--pencil); stroke-width:1.6; stroke-linecap:round; stroke-linejoin:round; }
+
+.pencil-note{
+  display:block;
+  font-weight:300; font-size:19px; color:var(--pencil);
+  transform:translateY(var(--nudge, 0px)) rotate(-1.2deg);
+  transform-origin:0 50%;
+}
+
+.promises ul{ list-style:none; padding:0; }
+.promises li{ position:relative; padding-left:1.2em; }
+.promises li::before{ content:"–"; position:absolute; left:.15em; }
+
+.fav{ position:relative; }
+.doodle{ position:absolute; overflow:visible; fill:none; stroke:var(--pencil); stroke-width:1.6; stroke-linecap:round; stroke-linejoin:round; }
+.doodle-heart{ width:18px; height:18px; left:calc(var(--text-x) * -1 + 10px); top:7px; transform:rotate(-12deg); }
+
+/* ---------- tick one ---------- */
+.ask{ display:flex; flex-direction:column; }
+.tick-one{ margin-left:.3em; font-weight:300; font-size:.92em; line-height:0; color:var(--pencil); white-space:nowrap; }
+
+.opt{
+  -webkit-appearance:none; appearance:none;
+  position:relative; display:block; width:100%;
+  margin:0; padding:var(--lh) 0 0; border:0; border-radius:4px;
+  background:none; font:inherit; color:inherit; text-align:left;
+  cursor:pointer; touch-action:manipulation; -webkit-tap-highlight-color:transparent;
+}
+.opt:disabled{ cursor:default; }
+.opt:focus-visible{ outline:2px dashed var(--gel); outline-offset:3px; }
+.opt-line{
+  position:relative; display:inline-block; max-width:100%;
+  padding-left:36px; text-indent:-36px;
+  font-weight:700;
+  transform-origin:0 70%;
+  transition:transform .45s cubic-bezier(.3,1.5,.55,1);
+}
+.opt-yes .opt-line{ transform:scale(var(--grow, 1)); }
+.opt-no.shake .opt-line{ animation:nope .42s ease; }
+@keyframes nope{
+  20%{ transform:translateX(-5px) rotate(-2deg); }
+  45%{ transform:translateX(5px) rotate(1.5deg); }
+  70%{ transform:translateX(-3px); }
+}
+.fresh{ display:inline-block; text-indent:0; animation:write .5s cubic-bezier(.45,.05,.4,1); }
+@keyframes write{
+  from{ clip-path:inset(-.4em 100% -.4em -.2em); }
+  to{ clip-path:inset(-.4em -.2em -.4em -.2em); }
+}
+.box-anchor{ display:inline-block; position:relative; width:36px; height:0; vertical-align:baseline; text-indent:0; }
+.box{ position:absolute; left:0; bottom:-5px; width:24px; height:24px; overflow:visible; }
+.box-edge{ fill:none; stroke:var(--ink); stroke-width:1.7; stroke-linecap:round; stroke-linejoin:round; }
+.tick{
+  fill:none; stroke:var(--gel); stroke-width:3.2; stroke-linecap:round; stroke-linejoin:round;
+  stroke-dasharray:1 2; stroke-dashoffset:1; opacity:0;
+}
+.opt[aria-pressed="true"] .tick{ opacity:1; stroke-dashoffset:0; transition:stroke-dashoffset .42s cubic-bezier(.55,0,.25,1); }
+
+.scribble{ position:absolute; inset:5px -8px 5px -4px; width:calc(100% + 12px); height:calc(100% - 10px); overflow:visible; pointer-events:none; }
+.scribble path{
+  fill:none; stroke:var(--gel); stroke-width:2.4; stroke-linecap:round; stroke-linejoin:round;
+  stroke-dasharray:1 2; stroke-dashoffset:1; opacity:0;
+}
+.ask.answered .opt-no .scribble path{ opacity:1; stroke-dashoffset:0; transition:stroke-dashoffset .5s ease .55s; }
+
+.hearts{ position:absolute; left:0; top:var(--lh); width:0; height:0; pointer-events:none; }
+.heart{
+  position:absolute; left:var(--x); top:var(--y); width:var(--s); height:var(--s);
+  overflow:visible; opacity:0;
+  transform:rotate(var(--r)) scale(.3);
+}
+.heart path{
+  fill:none; stroke:var(--gel); stroke-width:2.1; stroke-linecap:round; stroke-linejoin:round;
+  stroke-dasharray:1 2; stroke-dashoffset:1;
+}
+.ask.answered .heart{
+  opacity:1; transform:rotate(var(--r)) scale(1);
+  transition:opacity .01s var(--d), transform .55s cubic-bezier(.3,1.7,.5,1) var(--d);
+}
+.ask.answered .heart path{ stroke-dashoffset:0; transition:stroke-dashoffset .6s ease var(--d); }
+
+#notYet{ margin-top:var(--lh); }
+#notYet:not([hidden]){ animation:inkin .5s ease both; }
+@keyframes inkin{ from{ opacity:0; } }
+
+/* ---------- sign-off ---------- */
+.face-anchor{ display:inline-block; position:relative; width:42px; height:0; vertical-align:baseline; }
+.face{ position:absolute; left:10px; bottom:-7px; width:30px; height:30px; overflow:visible; fill:none; stroke:var(--pencil); stroke-width:1.6; stroke-linecap:round; stroke-linejoin:round; }
+.mouth{ transform-box:fill-box; transform-origin:50% 50%; transition:transform .6s cubic-bezier(.3,1.6,.5,1) .9s; }
+.face.happy .mouth{ transform:translateY(1.5px) scaleY(-1); }
+
+/* ---------- after she says yes ---------- */
+.after{ display:flex; flex-direction:column; gap:var(--lh); }
+.after > p{ animation:inkin .6s ease .7s both; }
+.sticky{
+  position:relative; z-index:3;
+  align-self:flex-end;
+  width:min(100%, 240px);
+  margin-right:4px; padding:14px;
+  background:var(--sticky); color:var(--ink);
+  line-height:1.3;
+  transform:rotate(2.5deg);
+  box-shadow:0 1px 1px var(--shadow-near), 0 14px 16px -10px var(--shadow);
+  animation:slap .5s cubic-bezier(.25,1.5,.45,1) 1.1s both;
+}
+@keyframes slap{ from{ opacity:0; transform:translateY(-16px) rotate(9deg) scale(1.2); } }
+.coupon{
+  display:flex; flex-direction:column; gap:2px;
+  padding:10px 12px 12px;
+  border:2px dashed var(--ink);
+  border-radius:8px 12px 9px 14px;
+}
+.coupon-tag{ font-family:var(--font-print); font-weight:600; font-size:12px; letter-spacing:.22em; text-transform:uppercase; color:var(--gel); }
+.coupon-main{ font-weight:700; font-size:22px; line-height:1.2; }
+.coupon-fine{ font-size:16px; }
+
+/* ---------- a pencil on the desk, wide screens only ---------- */
+.pencil{ display:none; }
+@media (min-width:1100px){
+  .pencil{
+    display:block; position:absolute; z-index:1;
+    left:calc(100% + 84px); top:380px;
+    width:230px; height:15px;
+    transform:rotate(-64deg); transform-origin:0 50%;
+    border-radius:2px 0 0 2px;
+    background:linear-gradient(to bottom, var(--lacquer-black) 0 32%, var(--lacquer-red) 32% 68%, var(--lacquer-black) 68% 100%);
+    box-shadow:-7px 3.5px 9px -3px var(--shadow);
+  }
+  .pencil::before{ content:""; position:absolute; left:0; right:0; top:40%; height:2px; background:var(--glint); }
+  .pencil::after{
+    content:""; position:absolute; left:100%; top:0;
+    width:42px; height:100%;
+    background:linear-gradient(90deg, var(--wood) 0 70%, var(--graphite) 70% 100%);
+    clip-path:polygon(0 0, 100% 50%, 0 100%);
+  }
+}
+
+.sr-only{ position:absolute; width:1px; height:1px; margin:-1px; padding:0; overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; border:0; }
+
+@media (prefers-reduced-motion:reduce){
+  .scene, .hl, .sticky, .after > p, #notYet, .fresh, .opt-no.shake .opt-line{ animation:none !important; }
+  .tick, .heart, .heart path, .scribble path, .opt-line, .mouth{ transition:none !important; }
+}
+</style>
+</head>
+<body>
+<main>
+  <div class="scene">
+    <div class="sheet">
+      <article class="paper" aria-label="A note for you">
+        <header class="page-head">
+          <span class="field">Page No.<b>1</b></span>
+          <span class="field">Date<b>22/10/26</b></span>
+        </header>
+
+        <div class="lines">
+          <p class="greet">Hey Kuchu Puchu,</p>
+
+          <p>I started this note <s>three</s> five times. This is the one I’m actually sending.</p>
+
+          <h1 class="sorry" data-sit="2"><span class="hl">I’m sorry.</span><span class="aside"><span class="arrow-anchor" aria-hidden="true"><svg class="arrow" viewBox="0 0 40 20"><path d="M37 12c-9 1.6-19 1.7-31-1.4"/><path d="M11.5 5.2 5.4 10.4l6.6 3.9"/></svg></span>meant it</span></h1>
+
+          <div>
+            <p>I hurt you, and you didn’t deserve that. I should have <s>explained myself</s> just listened, and I didn’t. That’s on me.</p>
+            <p class="pencil-note" data-sit="1">(no excuses this time)</p>
+          </div>
+
+          <div class="promises">
+            <p>From now on, I’ll:</p>
+            <ul>
+              <li>listen first, talk second</li>
+              <li>think before I say something dumb</li>
+              <li>remember we’re on the same team</li>
+            </ul>
+          </div>
+
+          <p class="fav"><span id="favLead">You’re</span> my favourite person, and nothing feels right when we’re not okay.<svg class="doodle doodle-heart" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.3C7.2 17 3.4 13.6 3.3 9.4 3.2 6.2 5.6 4.3 8.1 4.6c1.8.2 3.1 1.5 3.9 3.2.9-1.8 2.3-3.1 4.2-3.2 2.6-.2 4.7 1.9 4.4 5-.4 4.2-4.2 7.4-8.6 10.7"/></svg></p>
+
+          <div class="ask" id="ask">
+            <p class="question">So… will you forgive me? <span class="tick-one">(tick one)</span></p>
+            <div class="options" role="group" aria-label="Will you forgive me?">
+              <button class="opt opt-yes" id="yes" type="button" aria-pressed="false">
+                <span class="opt-line"><span class="box-anchor" aria-hidden="true"><svg class="box" viewBox="0 0 24 24"><path class="box-edge" d="M3.6 4.3C8.4 3.7 14.6 3.4 20.4 3.7c.4 5.5.5 11.1.2 16.8-5.7.4-11.4.5-17 .2-.4-5.4-.5-10.9-.2-16.5"/><path class="tick" pathLength="1" d="M6 12.8l4.6 5.6C13.5 11.6 17.4 5.6 23.5-1.5"/></svg></span><span class="opt-label">Yes</span></span>
+                <span class="hearts" aria-hidden="true">
+                  <svg class="heart" viewBox="0 0 24 24" style="--x:calc(78px * var(--grow, 1));--y:-14px;--s:20px;--r:14deg;--d:.35s"><path pathLength="1" d="M12 20.3C7.2 17 3.4 13.6 3.3 9.4 3.2 6.2 5.6 4.3 8.1 4.6c1.8.2 3.1 1.5 3.9 3.2.9-1.8 2.3-3.1 4.2-3.2 2.6-.2 4.7 1.9 4.4 5-.4 4.2-4.2 7.4-8.6 10.7z"/></svg>
+                  <svg class="heart" viewBox="0 0 24 24" style="--x:calc(108px * var(--grow, 1));--y:6px;--s:14px;--r:-10deg;--d:.48s"><path pathLength="1" d="M12 20.3C7.2 17 3.4 13.6 3.3 9.4 3.2 6.2 5.6 4.3 8.1 4.6c1.8.2 3.1 1.5 3.9 3.2.9-1.8 2.3-3.1 4.2-3.2 2.6-.2 4.7 1.9 4.4 5-.4 4.2-4.2 7.4-8.6 10.7z"/></svg>
+                  <svg class="heart" viewBox="0 0 24 24" style="--x:-34px;--y:-2px;--s:17px;--r:-16deg;--d:.6s"><path pathLength="1" d="M12 20.3C7.2 17 3.4 13.6 3.3 9.4 3.2 6.2 5.6 4.3 8.1 4.6c1.8.2 3.1 1.5 3.9 3.2.9-1.8 2.3-3.1 4.2-3.2 2.6-.2 4.7 1.9 4.4 5-.4 4.2-4.2 7.4-8.6 10.7z"/></svg>
+                  <svg class="heart" viewBox="0 0 24 24" style="--x:calc(50px * var(--grow, 1));--y:-26px;--s:12px;--r:8deg;--d:.7s"><path pathLength="1" d="M12 20.3C7.2 17 3.4 13.6 3.3 9.4 3.2 6.2 5.6 4.3 8.1 4.6c1.8.2 3.1 1.5 3.9 3.2.9-1.8 2.3-3.1 4.2-3.2 2.6-.2 4.7 1.9 4.4 5-.4 4.2-4.2 7.4-8.6 10.7z"/></svg>
+                  <svg class="heart" viewBox="0 0 24 24" style="--x:calc(136px * var(--grow, 1));--y:-18px;--s:18px;--r:22deg;--d:.8s"><path pathLength="1" d="M12 20.3C7.2 17 3.4 13.6 3.3 9.4 3.2 6.2 5.6 4.3 8.1 4.6c1.8.2 3.1 1.5 3.9 3.2.9-1.8 2.3-3.1 4.2-3.2 2.6-.2 4.7 1.9 4.4 5-.4 4.2-4.2 7.4-8.6 10.7z"/></svg>
+                </span>
+              </button>
+              <button class="opt opt-no" id="no" type="button" aria-pressed="false">
+                <span class="opt-line"><span class="box-anchor" aria-hidden="true"><svg class="box" viewBox="0 0 24 24"><path class="box-edge" d="M3.4 3.9C8.9 3.5 14.8 3.6 20.6 3.9c.3 5.6.2 11.2-.1 16.7-5.6.3-11.3.3-16.9 0-.3-5.4-.4-11-.1-16.6"/><path class="tick" pathLength="1" d="M6 12.8l4.6 5.6C13.5 11.6 17.4 5.6 23.5-1.5"/></svg></span><span class="opt-label" id="noLabel">No</span><svg class="scribble" viewBox="0 0 100 20" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="M1 11 6 6l5 8 5-8 5 8 5-8 5 8 5-8 5 8 5-8 5 8 5-8 5 8 5-8 5 8 5-8 5 8 5-8 5 8 5-8"/></svg></span>
+              </button>
+            </div>
+            <p id="notYet" hidden>That’s okay. You’re allowed to still be upset. This note doesn’t expire, so tick Yes whenever you’re ready.</p>
+          </div>
+
+          <p class="signoff">Still yours,<br>— Me<span class="face-anchor" aria-hidden="true"><svg class="face" viewBox="0 0 32 32"><path d="M16.4 3.6c7 .1 12.1 5.3 11.9 12.5-.2 6.9-5.6 12.1-12.6 11.9C8.8 27.8 3.7 22.6 3.9 15.6 4.1 8.6 9.3 3.5 18.2 4.1"/><path d="M12 12.6v2.6"/><path d="M20.4 12.4v2.6"/><g class="mouth"><path d="M11 22.6c3.2-3.1 7.1-3.2 10.4-.2"/></g></svg></span></p>
+
+          <div class="after" id="after" hidden>
+            <p>P.S. Thank you, Kuchu Puchu. Now text me, so I can stop staring at my phone.</p>
+            <div class="sticky">
+              <div class="coupon">
+                <span class="coupon-tag">Coupon</span>
+                <span class="coupon-main">One date, your pick.</span>
+                <span class="coupon-fine">I’m paying. No expiry.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+    <span class="tape" aria-hidden="true"><span class="tape-name" id="tapeName">for you</span></span>
+    <span class="pencil" aria-hidden="true"></span>
+  </div>
+  <p class="sr-only" id="status" aria-live="polite"></p>
+</main>
+
+<script>
+(() => {
+  const $ = (s) => document.querySelector(s);
+  const lines = $('.lines'), paper = $('.paper'), greet = $('.greet');
+  const heading = $('.sorry'), hl = $('.hl');
+  const ask = $('#ask'), yes = $('#yes'), no = $('#no'), noLabel = $('#noLabel');
+  const notYet = $('#notYet'), after = $('#after'), face = $('.face'), status = $('#status');
+  const reduce = !!(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches);
+
+  /* Where does the text baseline fall inside an element's first line? (layout values, so the tilt doesn't matter) */
+  const baselineOf = (el) => {
+    const m = document.createElement('span');
+    m.className = 'bl-probe';
+    el.insertBefore(m, el.firstChild);
+    const y = m.offsetTop;
+    m.remove();
+    return y;
+  };
+
+  /* Sit the handwriting on the printed rules, whatever font actually loaded. */
+  function align() {
+    const lh = parseFloat(getComputedStyle(lines).lineHeight) || 32;
+    const b = baselineOf(greet);
+    lines.style.setProperty('--line-y', Math.min(lh - 3, Math.max(14, b + 2)) + 'px');
+    document.querySelectorAll('[data-sit]').forEach((el) => {
+      const row = Number(el.dataset.sit) || 1;
+      el.style.setProperty('--nudge', ((row - 1) * lh + b - baselineOf(el)) + 'px');
+    });
+    const fs = parseFloat(getComputedStyle(heading).fontSize) || 48;
+    const top = baselineOf(heading) - 0.52 * fs - hl.offsetTop;
+    hl.style.setProperty('--hl-y', top.toFixed(1) + 'px');
+    hl.style.setProperty('--hl-h', (0.6 * fs).toFixed(1) + 'px');
+  }
+
+  /* Ragged left edge where the page was torn out of the notebook. */
+  function tear() {
+    const h = paper.offsetHeight;
+    let seed = 1234567;
+    const rnd = () => (seed = (seed * 16807) % 2147483647) / 2147483647;
+    const left = [];
+    for (let y = 0; y < h; y += 4 + rnd() * 7) left.push((rnd() * 4.6).toFixed(1) + 'px ' + y.toFixed(1) + 'px');
+    left.push((rnd() * 4.6).toFixed(1) + 'px ' + h + 'px');
+    const shape = 'polygon(100% 0, 100% 100%, ' + left.reverse().join(', ') + ')';
+    paper.style.webkitClipPath = shape;
+    paper.style.clipPath = shape;
+  }
+
+  /* The name travels in the link (…/for-you/#Name), so it never sits in this public code. */
+  let fromLink = '';
+  try { fromLink = decodeURIComponent((location.hash || '').slice(1)); } catch (e) { fromLink = ''; }
+  fromLink = fromLink.replace(/[-_+]+/g, ' ').replace(/\s+/g, ' ').trim();
+  if (/^\p{L}[\p{L}\p{M} '’.]{0,23}$/u.test(fromLink)) {
+    const name = fromLink.charAt(0).toUpperCase() + fromLink.slice(1);
+    $('#tapeName').textContent = 'for ' + name;
+    $('#favLead').textContent = name + ', you’re';
+    paper.setAttribute('aria-label', 'A note for ' + name);
+  }
+
+  align();
+  tear();
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(() => { align(); tear(); });
+  let frame = 0;
+  window.addEventListener('resize', () => { cancelAnimationFrame(frame); frame = requestAnimationFrame(align); });
+  if ('ResizeObserver' in window) new ResizeObserver(tear).observe(paper);
+
+  /* The "No" box keeps changing its mind. */
+  const labels = ['No', 'Are you sure?', 'Really sure?', 'Even for ice cream?', 'Please, Kuchu Puchu?', 'Not yet'];
+  let step = 0;
+  let done = false;
+
+  no.addEventListener('click', () => {
+    if (done) return;
+    if (step < labels.length - 1) {
+      const old = document.createElement('s');
+      old.textContent = labels[step];
+      step += 1;
+      const fresh = document.createElement('span');
+      fresh.className = 'fresh';
+      fresh.textContent = labels[step];
+      noLabel.textContent = '';
+      noLabel.append(old, ' ', fresh);
+      yes.style.setProperty('--grow', (1 + Math.min(step, 4) * 0.14).toFixed(2));
+      no.classList.remove('shake');
+      void no.offsetWidth;
+      no.classList.add('shake');
+    } else if (no.getAttribute('aria-pressed') !== 'true') {
+      no.setAttribute('aria-pressed', 'true');
+      notYet.hidden = false;
+      status.textContent = 'You ticked Not yet.';
+    }
+  });
+
+  yes.addEventListener('click', () => {
+    if (done) return;
+    done = true;
+    yes.setAttribute('aria-pressed', 'true');
+    ask.classList.add('answered');
+    no.disabled = true;
+    notYet.hidden = true;
+    face.classList.add('happy');
+    after.hidden = false;
+    status.textContent = 'You ticked Yes.';
+    window.setTimeout(() => {
+      after.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'center' });
+    }, reduce ? 0 : 900);
+  });
+})();
+</script>
+</body>
+</html>
